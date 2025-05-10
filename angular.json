@@ -19,6 +19,7 @@
           "options": {
             "outputPath": "dist/brunocosta-portfolio",
             "index": "src/index.html",
+            "baseHref": "/brunocosta-portfolio/",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -35,7 +36,8 @@
                 "glob": "**/*",
                 "input": "src/assets",
                 "output": "assets"
-              }
+              },
+              "src/favicon.ico"
             ],
             "styles": [
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
@@ -58,7 +60,8 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "/brunocosta-portfolio/"
             },
             "development": {
               "optimization": false,
@@ -102,7 +105,8 @@
                 "glob": "**/*",
                 "input": "src/assets",
                 "output": "assets"
-              }
+              },
+              "src/favicon.ico"
             ],
             "styles": [
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
