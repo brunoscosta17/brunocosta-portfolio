@@ -1,0 +1,95 @@
+@use '../styles/index' as style;
+
+.main-header {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-bg);
+  z-index: 100;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo a {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: var(--color-primary);
+      text-decoration: none;
+    }
+
+    .menu-toggle {
+      display: block;
+      font-size: 1.5rem;
+      color: var(--color-text);
+      cursor: pointer;
+
+      @include style.respond-up(md) {
+        display: none;
+      }
+    }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: var(--color-text);
+        font-weight: 500;
+
+        &.active {
+          color: var(--color-primary);
+        }
+      }
+
+      &.open {
+        display: flex;
+      }
+
+      @include style.respond-up(md) {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+        gap: 2rem;
+
+        &.open {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: var(--color-text);
+  transition: color 0.3s ease;
+}
+
+.theme-toggle:hover i {
+  color: var(--color-primary);
+}
+
+.fa-sun {
+  color: #fdd835;
+}
+
+body.dark-mode .fa-sun {
+  color: #f0f0f0;
+}

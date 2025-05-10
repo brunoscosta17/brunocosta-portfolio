@@ -1,0 +1,15 @@
+:root {
+    --color-bg: #ffffff;
+    --color-text: #333333;
+    --color-primary: #007bff;
+    --color-secondary: #6c757d;
+    --color-active: #0056b3;
+  }
+
+  body.dark-mode {
+    --color-bg: #1e1e1e;
+    --color-text: #f0f0f0;
+    --color-primary: #4dabf7;
+    --color-secondary: #868e96;
+    --color-active: #74c0fc;
+  }
