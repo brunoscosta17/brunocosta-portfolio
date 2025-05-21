@@ -10,9 +10,9 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
 
   projects = [
-    { name: 'CRUD Angular', framework: 'Angular', url: 'https://angular-crud.netlify.app' },
-    { name: 'CRUD React', framework: 'React (Next.js)', url: 'https://next-crud.vercel.app' },
-    { name: 'CRUD Vue', framework: 'Vue.js', url: 'https://vue-crud.netlify.app' }
+    { name: 'Angular', framework: 'Angular', url: 'https://brunocosta.tech/angular' },
+    { name: 'React', framework: 'React (Next.js)', url: 'https://brunocosta.tech/react' },
+    { name: 'Vue', framework: 'Vue.js', url: 'https://brunocosta.tech/vue' }
   ];
 
 }
