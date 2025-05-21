@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
 
   projects = [
-    { name: 'Angular', framework: 'Angular', url: 'https://brunocosta.tech/angular' },
+    { name: 'Angular', framework: 'Angular', url: 'https://brunoscosta17.github.io/UserAuthAngular/#/login' },
     { name: 'React', framework: 'React (Next.js)', url: 'https://brunocosta.tech/react' },
     { name: 'Vue', framework: 'Vue.js', url: 'https://brunocosta.tech/vue' }
   ];
